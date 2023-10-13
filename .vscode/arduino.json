@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "sketch": "Proyecto zumo\\01_Arduino.ino",
+    "port": "COM3"
+}

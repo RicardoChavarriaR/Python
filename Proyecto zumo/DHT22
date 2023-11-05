@@ -1,0 +1,30 @@
+#include <Arduino.h>
+#include <DHT.h>
+#include <DHT_U.h>
+
+// SGINIFICACO DE LAS RESISTENCIAS**********************************************
+// pull-up: significa que debe conectarse al positivo de tensión
+// pull-down: aquella que requiere  conectarse a
+//******************************************************************************
+
+int sensor = 4;
+double temperatura;
+int humedad;
+
+DHT dht(sensor,DHT22);
+
+void setup(){
+  Serial.begin(9600);
+  dht.begin();
+}
+
+void loop(){
+  temperatura = dht.readTemperature();
+  humedad = dht.readHumidity();
+  Serial.print("Temperatura: ");
+  Serial.print(temperatura);
+  Serial.print(" Humedad: ");
+  Serial.println(humedad);
+
+delay(500);
+}

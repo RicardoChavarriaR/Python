@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c{
+    display: flex;
+    flex: 1 1 10%;
+    background-color: rgb(244, 243, 243);
+    font-size: 60px;
+
+    padding: 0 0 0 10px;
+}
+
+.títuloc{
+    margin: 10px 30px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 0 20px;
+
+    font-size: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    align-self: center;
+    box-shadow: 5px 5px 5px 1px;
+}
+
+.título{
+    flex: 1 1 80%;
+    background-color:rgb(244, 243, 243);
+    font-size: 90px;
+
+    text-align: center;
+    padding: 90px 0 0 0;
+}
+
+.texto{
+    flex: 1 1 100%;
+    font-size: 60px;
+
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+
+    padding: 40px 0 0 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
